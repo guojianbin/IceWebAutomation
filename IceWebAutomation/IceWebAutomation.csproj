@@ -1,0 +1,146 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D547E0A-621B-410C-81A6-077BC48FB2E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IceWebAutomation</RootNamespace>
+    <AssemblyName>IceWebAutomation</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command.cs" />
+    <Compile Include="CommandQueue.cs" />
+    <Compile Include="FrmIceWebAutomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIceWebAutomation.Designer.cs">
+      <DependentUpon>FrmIceWebAutomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputImgInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputImgInfo.Designer.cs">
+      <DependentUpon>FrmInputImgInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputInvokeScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputInvokeScript.Designer.cs">
+      <DependentUpon>FrmInputInvokeScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputParams.Designer.cs">
+      <DependentUpon>FrmInputParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowImage.Designer.cs">
+      <DependentUpon>FrmShowImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotKeyHelper.cs" />
+    <Compile Include="HtmlCodeFormat.cs" />
+    <Compile Include="IceFormater.cs" />
+    <Compile Include="WebAutomationTasks\ExcuteJsTask.cs" />
+    <Compile Include="WebAutomationTasks\ExecScriptTask.cs" />
+    <Compile Include="WebAutomationTasks\GetImgTask.cs" />
+    <Compile Include="WebAutomationTasks\IEvent.cs" />
+    <Compile Include="WebAutomationTasks\IHandle.cs" />
+    <Compile Include="InvokeHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmIceWebAutomation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmIceWebAutomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputImgInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInputImgInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputInvokeScript.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInputInvokeScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputParams.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInputParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowImage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmShowImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WebAPI.cs" />
+    <Compile Include="WebAutomationHelper.cs" />
+    <Compile Include="WebAutomationTasks\ClickButtonTask.cs" />
+    <Compile Include="WebAutomationTasks\ClickLinkTask.cs" />
+    <Compile Include="WebAutomationTasks\FillDataTask.cs" />
+    <Compile Include="WebAutomationTasks\MakeScreenShotTask.cs" />
+    <Compile Include="WebAutomationTasks\NavigateTask.cs" />
+    <Compile Include="WebAutomationTasks\SelectDropDownTask.cs" />
+    <Compile Include="WebAutomationTasks\SelectRadioTask.cs" />
+    <Compile Include="WebAutomationTasks\SleepTask.cs" />
+    <Compile Include="WebAutomationTasks\State.cs" />
+    <Compile Include="WebAutomationTasks\Task.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\bin\Debug\IceWebAutomation.exe
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\bin\Debug\IceWebAutomation.pdb
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.Properties.Resources.resources
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.csproj.GenerateResource.Cache
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.exe
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.pdb
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.FrmIceWebAutomation.resources
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.FrmInputParams.resources
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.FrmInputInvokeScript.resources
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.FrmShowImage.resources
+C:\Users\guojb.gz01\Documents\Visual Studio 2005\Projects\IceWebAutomation\IceWebAutomation\obj\Debug\IceWebAutomation.FrmInputImgInfo.resources
