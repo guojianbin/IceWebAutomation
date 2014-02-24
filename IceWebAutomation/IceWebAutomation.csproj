@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command.cs" />
-    <Compile Include="CommandQueue.cs" />
+    <Compile Include="WebAutomationTasks\Command.cs" />
+    <Compile Include="WebAutomationTasks\CommandQueue.cs" />
     <Compile Include="FrmIceWebAutomation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,15 +72,15 @@
     <Compile Include="FrmShowImage.Designer.cs">
       <DependentUpon>FrmShowImage.cs</DependentUpon>
     </Compile>
-    <Compile Include="HotKeyHelper.cs" />
-    <Compile Include="HtmlCodeFormat.cs" />
-    <Compile Include="IceFormater.cs" />
+    <Compile Include="Common\HotKeyHelper.cs" />
+    <Compile Include="Common\HtmlCodeFormat.cs" />
+    <Compile Include="Common\IceFormater.cs" />
     <Compile Include="WebAutomationTasks\ExcuteJsTask.cs" />
     <Compile Include="WebAutomationTasks\ExecScriptTask.cs" />
     <Compile Include="WebAutomationTasks\GetImgTask.cs" />
     <Compile Include="WebAutomationTasks\IEvent.cs" />
     <Compile Include="WebAutomationTasks\IHandle.cs" />
-    <Compile Include="InvokeHelper.cs" />
+    <Compile Include="Common\InvokeHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmIceWebAutomation.resx">
@@ -122,8 +122,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="WebAPI.cs" />
-    <Compile Include="WebAutomationHelper.cs" />
+    <Compile Include="Common\WebAPI.cs" />
+    <Compile Include="Common\WebAutomationHelper.cs" />
     <Compile Include="WebAutomationTasks\ClickButtonTask.cs" />
     <Compile Include="WebAutomationTasks\ClickLinkTask.cs" />
     <Compile Include="WebAutomationTasks\FillDataTask.cs" />
